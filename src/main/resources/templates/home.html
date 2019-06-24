@@ -6,13 +6,13 @@
 </head>
 <body>
 
-Заявка
+Заявка:
 <form action="/save" method="post" th:object="${application}">
     дата <input type="date" th:field="*{date}" ><br>
     курс <select th:field="*{title}">
         <option th:each="type1 : ${courses}" th:value="${type1}" th:text="${type1}"></option>
     </select><br><br>
-    Клієнт<br>
+    Клієнт:<br>
     <input name="name" type="text" placeholder="ім'я"><br>
     <input name="surname" type="text" placeholder="прізвище"><br>
     <input name="phone" type="text" placeholder="телефон"><br>
